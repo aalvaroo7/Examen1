@@ -39,6 +39,24 @@ La flexibilidad de C++ permite a los programadores elegir el enfoque que mejor s
 
 ## 9a)¿Qué es la propagación de una excepción?
 
+La propagación de excepciones es el proceso mediante el cual una excepción lanzada en una parte del código se transmite o propaga hacia arriba a través de la pila de llamadas hasta que se maneja en algún lugar adecuado.
+
+Cuando ocurre una excepción en un bloque de código, el flujo normal del programa se interrumpe, y se busca un bloque de código (como un bloque catch en C++ o un bloque except en Python) que pueda manejar esa excepción. Si no se encuentra uno en el mismo bloque, la excepción se propaga hacia arriba en la cadena de llamadas a funciones hasta que se encuentra un bloque de manejo o hasta que llega al nivel más alto del programa, lo que podría resultar en la terminación del programa y la impresión de un mensaje de error.
+
+La propagación de excepciones permite separar la lógica de manejo de errores del código donde se produce el error, lo que puede hacer que el código sea más modular y fácil de mantener. Además, facilita la identificación y gestión de errores en niveles superiores del programa, donde se tiene una visión más amplia del contexto y se pueden tomar decisiones más informadas sobre cómo manejar la excepción.
+
+## 9b)¿Qué ocurre si una excepción lanzada no es capturada por ningún bloque catch?
+
+Si una excepción es lanzada pero no es capturada por ningún bloque catch, la excepción seguirá propagándose hacia arriba en la pila de llamadas hasta llegar al nivel más alto del programa. En este punto, dependiendo del lenguaje de programación y del entorno de ejecución, puede ocurrir una de las siguientes situaciones:
+
+Terminación del Programa: En muchos casos, si una excepción no se maneja en ningún lugar, el programa terminará su ejecución. Esto podría ir acompañado de un mensaje de error que indica la naturaleza de la excepción.
+
+Impresión de un Mensaje de Error: Al alcanzar el nivel superior, algunas plataformas o entornos pueden imprimir un mensaje de error predeterminado que describe la excepción no manejada.
+
+Dependiendo del Lenguaje: En algunos lenguajes, como C++, si una excepción no es capturada, puede resultar en un término anormal del programa (por ejemplo, std::terminate() en C++).
+
+Es importante manejar las excepciones de manera adecuada para evitar términos inesperados del programa y para proporcionar información útil sobre los errores que pueden ocurrir durante la ejecución. Esto generalmente implica agregar bloques catch adecuados para manejar las excepciones en lugares relevantes del código.
+
 
 
 
