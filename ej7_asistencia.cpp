@@ -17,7 +17,9 @@ int main(){
     RegistroAsistencia asistencia1("2021-10-01", "Presente");
     RegistroAsistencia asistencia2("2021-10-02", "Ausente");
     RegistroAsistencia asistencia3("2021-10-03", "Presente");
-    asistencia.mostrar_asistencia();
+    asistencia1.mostrar_asistencia();
+    asistencia2.mostrar_asistencia();
+    asistencia3.mostrar_asistencia();
     return 0;
 }
 
