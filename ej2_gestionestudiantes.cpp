@@ -27,3 +27,9 @@ public:
         cout << "Grado: " << grado << std::endl;
     }
 };
+int main() {
+    Estudiante estudiante;
+
+    string nombre;
+    int edad;
+    string grado;
