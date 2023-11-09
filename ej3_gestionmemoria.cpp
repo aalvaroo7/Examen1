@@ -23,4 +23,6 @@ using namespace std;
 int main() {
      int num1=928;
         int num2=922;
+        cout<<"los valores originales son: "<<num1<<" y "<<num2<<endl;
+
  }
