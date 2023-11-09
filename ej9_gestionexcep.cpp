@@ -47,3 +47,20 @@ public:
         cout << "Este es un método personalizado para el alumno " << nombre << "." << endl;
     }
 };
+int main() {
+    MiAlumno miAlumno("Ana");
+
+    try {
+        miAlumno.inscribir_curso("Programacion");
+        miAlumno.inscribir_curso("Diseño");
+        miAlumno.inscribir_curso("Programacion");  // Intentamos inscribir el mismo curso nuevamente
+        miAlumno.inscribir_curso("Estadistica");
+
+        miAlumno.listar_cursos();
+        miAlumno.metodo_personalizado();
+    } catch (const MateriaYaRegistradaException& ex) {
+        cerr << "Error: El curso '" << ex.getMateria() << "' ya ha sido inscrito." << endl;
+    }
+
+    return 0;
+}
