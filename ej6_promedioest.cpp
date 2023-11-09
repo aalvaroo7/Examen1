@@ -9,3 +9,18 @@ int main() {
     for (int nota : notas) {
         cout << " " << nota;
     }
+        cout << endl;
+
+        int suma = 0;
+        for (int nota : notas) {
+            suma += nota
+        }
+
+        double media = static_cast<double>(suma) / notas.size();
+
+        cout << "El promedio de las calificaciones es: " << media << endl;
+
+        return 0;
+    }
+
+
