@@ -52,9 +52,9 @@ int main() {
     MiAlumno miAlumno("Ana");
 
     try {
-        miAlumno.inscribir_curso("Programacion");
+        miAlumno.inscribir_curso("mates");
         miAlumno.inscribir_curso("Diseño");
-        miAlumno.inscribir_curso("Programacion");  // Intentamos inscribir el mismo curso nuevamente
+        miAlumno.inscribir_curso("lengua");  // Intentamos inscribir el mismo curso nuevamente
         miAlumno.inscribir_curso("Estadistica");
 
         miAlumno.listar_cursos();
