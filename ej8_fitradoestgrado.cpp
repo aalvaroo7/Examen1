@@ -11,5 +11,19 @@ public:
     }
     int obtenerGrado() const {
         return grado;
+    }
+private:
+    string nombre;
+    int grado;
+};
+int main() {
+    vector<Estudiante> estudiantes;
+    estudiantes.push_back(Estudiante("Juan", 10));
+    estudiantes.push_back(Estudiante("Maria", 11));
+    estudiantes.push_back(Estudiante("Pedro", 10));
+    estudiantes.push_back(Estudiante("Ana", 11));
+    estudiantes.push_back(Estudiante("Luis", 10));
 
+
+}
 
