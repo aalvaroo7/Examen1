@@ -21,11 +21,13 @@ int main() {
     cin>> y;
 try{
 
-}
 int resultado= division(y,x);
 cout<<"el resultado es: "<<resultado<<endl;
 }
 catch (const char* mensaje_de_error_throw)
 {
     cout << mensaje_de_error_throw << endl;
+}
+cout <<"el progama sigue despues de la excepcion"
+return 0;
 }
