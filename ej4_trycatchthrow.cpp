@@ -11,3 +11,11 @@ int division(int y,int x){
     if (x==0)
         throw runtime_error("Error: division por cero");
     return y/x;
+}
+int main() {
+    cout<<"ingrese su numero: ";
+    int x;
+    cin >>  x;
+    cout<<"ingrese el segundo numero";
+    int y;
+    cin>> y;
