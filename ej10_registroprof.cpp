@@ -21,3 +21,10 @@ private:
     string asignatura;
     int experiencia;
 };
+int main() {
+    Docente docente("Ana Rodriguez", 35, "Ciencias", 8);
+
+    docente.mostrar_informacion_docente();
+
+    return 0;
+}
