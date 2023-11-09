@@ -36,7 +36,7 @@ int *punt2=&num2;
 
     // Se imprime el valor de num1 y num2 después de la llamada a la función intercambiar,
     // lo que mostrará los valores intercambiados.
-    std::cout << "Valores intercambiados: num1 = " << num1 << ", num2 = " << num2 << std::endl;
+    cout << "Valores intercambiados: num1 = " << num1 << ", num2 = " << num2 << std::endl;
 
     return 0;
 }
