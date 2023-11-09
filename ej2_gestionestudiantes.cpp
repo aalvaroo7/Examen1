@@ -46,3 +46,8 @@ int main() {
     cout << "Introduce el grado del estudiante: ";
     getline(std::cin, grado);
 
+    // Establecer los datos del estudiante
+    estudiante.establecer_datos(nombre, edad, grado);
+
+    // Mostrar la información del estudiante
+    estudiante.mostrar_info();
