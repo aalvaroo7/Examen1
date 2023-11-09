@@ -22,11 +22,34 @@ public:
         }
         asignaturas.push_back(asignatura);
     }
-    void listar_materias() {
+    void lista_materias() {
         cout << nombre << " ha registrado las siguientes materias: ";
         for (const string& asignatura : asignaturas) {
             cout << asignatura << ", ";
         }
         cout << endl;
+
     }
+private:
+    string nombre;
+    vector<string> asignaturas;
+};
+
+int main(){
+    Estudiante estudiante("paco");
+
+    try {
+        estudiante.registrar_materia("Matematicas");
+        estudiante.registrar_materia("Fisica");
+        estudiante.registrar_materia("Programacion");
+        estudiante.registrar_materia("Programacion");
+    } catch (const asignaturaRegistradaException& e) {
+        cout << "La asignatura " << e.obtenerAsignatura() << " ya ha sido registrada" << endl;
+    }
+
+    estudiante.lista_materias();
+
+    return 0;
+
+
 };
