@@ -19,3 +19,13 @@ int main() {
     cout<<"ingrese el segundo numero";
     int y;
     cin>> y;
+try{
+
+}
+int resultado= division(y,x);
+cout<<"el resultado es: "<<resultado<<endl;
+}
+catch (const char* mensaje_de_error_throw)
+{
+    cout << mensaje_de_error_throw << endl;
+}
