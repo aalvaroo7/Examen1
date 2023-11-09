@@ -57,6 +57,26 @@ Dependiendo del Lenguaje: En algunos lenguajes, como C++, si una excepción no e
 
 Es importante manejar las excepciones de manera adecuada para evitar términos inesperados del programa y para proporcionar información útil sobre los errores que pueden ocurrir durante la ejecución. Esto generalmente implica agregar bloques catch adecuados para manejar las excepciones en lugares relevantes del código.
 
+# 10.-La gestión de recursos es un concepto crucial en la programación. Explica:
+
+## 10a)¿Qué se entiende por "Adquisición de Recursos" en el contexto de C++?
+
+En C++, "adquisición de recursos" se refiere al proceso de reservar y asignar recursos, como memoria, durante la ejecución de un programa. En términos más simples, es obtener los recursos necesarios para que un programa funcione correctamente.
+
+Por ejemplo, en la gestión dinámica de memoria, la adquisición de recursos podría implicar el uso de operadores como new para asignar memoria en el heap. Después de haber utilizado estos recursos, es importante liberarlos adecuadamente mediante el uso de delete para evitar fugas de memoria.
+
+En resumen, la adquisición de recursos en C++ se refiere a obtener y gestionar los recursos necesarios para que un programa se ejecute correctamente, y también implica liberar esos recursos cuando ya no son necesarios.
+
+## 10b)¿Por qué es importante y cómo se relaciona con la gestión de excepciones?
+
+La gestión adecuada de recursos en C++ es esencial para prevenir posibles problemas, como fugas de memoria o la falta de liberación de otros recursos, lo que podría afectar el rendimiento y la estabilidad del programa. La relación con la gestión de excepciones radica en la necesidad de manejar situaciones excepcionales de manera elegante y segura.
+
+Cuando ocurre una excepción, es crucial liberar cualquier recurso adquirido previamente para evitar fugas de memoria o dejar el programa en un estado inconsistente. Por ejemplo, si has asignado memoria dinámicamente con new y ocurre una excepción antes de que puedas liberar esa memoria con delete, podrías perder la referencia a esa memoria, lo que resultaría en una fuga de memoria.
+
+Para abordar esto, se puede utilizar el bloque try-catch. En el bloque try, puedes adquirir recursos, y en el bloque catch, puedes manejar las excepciones y liberar cualquier recurso adquirido. También puedes utilizar técnicas como RAII (Resource Acquisition Is Initialization) mediante el uso de objetos que automáticamente adquieran y liberen recursos en sus constructores y destructores, respectivamente.
+
+En resumen, la gestión de recursos y la gestión de excepciones están relacionadas porque la primera es crucial para evitar problemas como fugas de memoria, y la segunda proporciona un mecanismo para manejar situaciones excepcionales de manera que los recursos se liberen adecuadamente.
+
 
 
 
