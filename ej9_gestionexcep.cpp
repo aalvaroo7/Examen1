@@ -34,3 +34,16 @@ public:
         }
         cout << endl;
     }
+private:
+    string nombre;
+    vector<string> cursos;
+};
+
+class MiAlumno : public Alumno {
+public:
+    MiAlumno(string nombre) : Alumno(nombre) {}
+
+    void metodo_personalizado() {
+        cout << "Este es un método personalizado para el alumno " << nombre << "." << endl;
+    }
+};
