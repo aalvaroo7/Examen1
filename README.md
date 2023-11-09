@@ -77,6 +77,16 @@ Para abordar esto, se puede utilizar el bloque try-catch. En el bloque try, pued
 
 En resumen, la gestión de recursos y la gestión de excepciones están relacionadas porque la primera es crucial para evitar problemas como fugas de memoria, y la segunda proporciona un mecanismo para manejar situaciones excepcionales de manera que los recursos se liberen adecuadamente.
 
+# parte 2)
+
+# ejercicio 1)
+incluyo una función suma que sume a y b y luego con cout la muestro habiendo definido antes a y b 
+
+# ejercicio 2)
+
+defino una clase estudiante,con atributos privados e ineditables que son edad, grado, y nombre 
+despues creo varios cout con getlines que almacenan el nombre, edad y grado del estudiante, que se recogen en la funcion estudiante.establecerdatos y mas adelante la mostrara en pantalla la funcion estudiante.mostrarinfo la cual es un void declarado anteriormente en la clase, que no guarda los datos al ser un void
+
 
 
 
