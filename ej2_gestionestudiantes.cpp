@@ -41,3 +41,8 @@ int main() {
     cout << "Introduce la edad del estudiante: ";
     cin >> edad;
 
+    cin.ignore(); // Para consumir el salto de línea pendiente
+
+    cout << "Introduce el grado del estudiante: ";
+    getline(std::cin, grado);
+
