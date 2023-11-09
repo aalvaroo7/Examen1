@@ -1,7 +1,7 @@
 # Examen1
 https://github.com/aalvaroo7/Examen1.git
 
-parte 1(preguntas tipo test))
+Parte 1(preguntas tipo test))
 
 pregunta 1)C++ es un lenguaje de programación ampliamente utilizado que ha evolucionado a lo largo de los años. ¿Cuáles de las siguientes opciones describen correctamente las características centrales de C++? 
 
@@ -14,4 +14,8 @@ respuesta: b. Un archivo que ayuda a gestionar y automatizar la compilación de 
 pregunta 3)En C++, las variables pueden referirse a datos o direcciones de memoria. En relación a esto, ¿qué son los punteros en la programación C++?
 
 respuesta: b. Variables que almacenan la dirección de otra variable
+
+Parte 3(preguntas a desarrollar)
+
+
 
