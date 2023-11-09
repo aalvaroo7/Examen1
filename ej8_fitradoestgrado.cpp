@@ -24,6 +24,20 @@ int main() {
     estudiantes.push_back(Estudiante("Ana", 11));
     estudiantes.push_back(Estudiante("Luis", 10));
 
+    cout << "<gardos disponibles\n>" << endl;
+    for (const Estudiante &estudiante: estudiantes) {
+        cout << estudiante.obtenerNombre() << "-Grado" << estudiante.obtenerGrado() << endl;
+    }
+    int gradoBuscado;
+    cout << "Introduce el grado a buscar: ";
+    cin >> gradoBuscado;
 
+    cout << "estudiantes del grado " << gradoBuscado << endl;
+    for (const Estudiante &estudiante: estudiantes) {
+        if (estudiante.obtenerGrado() == gradoBuscado) {
+            cout << estudiante.obtenerNombre() << endl;
+        }
+    }
+    return 0;
 }
 
