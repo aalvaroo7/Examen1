@@ -2,6 +2,8 @@
 using namespace std;
 #include <string>
 #include <vector>
-#include <iostream>
-#include <vector>
-#include <string>
+private:
+string nombre;
+int edad;
+string grado;
+
