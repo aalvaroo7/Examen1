@@ -51,3 +51,6 @@ int main() {
 
     // Mostrar la información del estudiante
     estudiante.mostrar_info();
+
+    return 0;
+}
