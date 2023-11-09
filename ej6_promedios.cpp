@@ -14,7 +14,9 @@ private:
     string estado;
 };
 int main(){
-    RegistroAsistencia asistencia("2021-10-01", "Presente");
+    RegistroAsistencia asistencia1("2021-10-01", "Presente");
+    RegistroAsistencia asistencia2("2021-10-02", "Ausente");
+    RegistroAsistencia asistencia3("2021-10-03", "Presente");
     asistencia.mostrar_asistencia();
     return 0;
 }
