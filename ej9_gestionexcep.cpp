@@ -35,8 +35,9 @@ public:
         cout << endl;
     }
 private:
-    string nombre;
     vector<string> cursos;
+protected:
+    string nombre;
 };
 
 class MiAlumno : public Alumno {
