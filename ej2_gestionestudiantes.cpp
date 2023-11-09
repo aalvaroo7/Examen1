@@ -35,8 +35,9 @@ int main() {
     string grado;
 //solicitar al user que introduzca su edad grado y nombre
 
-cout<<"introdzca su nombre:";<<endl;
+    cout << "Introduce el nombre del estudiante: ";
+    getline(std::cin, nombre);
 
-getline(std::cin,nombre);
+    cout << "Introduce la edad del estudiante: ";
+    cin >> edad;
 
-cout<<"introdzca su edad:";<<endl;
