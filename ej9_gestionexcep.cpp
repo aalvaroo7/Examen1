@@ -27,3 +27,10 @@ public:
         }
         cursos.push_back(curso);
     }
+    void listar_cursos() {
+        cout << "El alumno " << nombre << " está inscrito en los siguientes cursos: ";
+        for (const string& curso : cursos) {
+            cout << curso << ", ";
+        }
+        cout << endl;
+    }
