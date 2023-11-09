@@ -20,3 +20,10 @@ public:
         this->edad = edad;
         this->grado = grado;
     }
+    // Función para mostrar la información del estudiante
+    void mostrar_info() {
+        cout << "Nombre: " << nombre << std::endl;
+        cout << "Edad: " << edad << " años" << std::endl;
+        cout << "Grado: " << grado << std::endl;
+    }
+};
