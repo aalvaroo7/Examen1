@@ -11,12 +11,5 @@ public:
     }
     int obtenerGrado() const {
         return grado;
-    }
-private:
-    string nombre;
-    int grado;
-};
-
-
 
 
