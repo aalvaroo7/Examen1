@@ -8,3 +8,9 @@ public:
     string obtenerAsignatura() const {
         return asignatura;
     }
+private:
+    string asignatura;
+};
+class Estudiante {
+
+};
