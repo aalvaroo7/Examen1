@@ -29,7 +29,6 @@ public:
 };
 int main() {
     Estudiante estudiante;
-
     string nombre;
     int edad;
     string grado;
