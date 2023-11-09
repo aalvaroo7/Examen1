@@ -87,6 +87,9 @@ incluyo una función suma que sume a y b y luego con cout la muestro habiendo de
 defino una clase estudiante,con atributos privados e ineditables que son edad, grado, y nombre 
 despues creo varios cout con getlines que almacenan el nombre, edad y grado del estudiante, que se recogen en la funcion estudiante.establecerdatos y mas adelante la mostrara en pantalla la funcion estudiante.mostrarinfo la cual es un void declarado anteriormente en la clase, que no guarda los datos al ser un void
 
+# ejercicio 3)
+declaro la funcion intercambiar que consiste en un void y una funcion temporal llamda mom que hace que a y b se aputen uno al otro, sin esta funcion mom no se podran apuntar uno al otro,
+declaro la funcion principal, en la cual declaro los numeros num1 y num2 con dos valores iniciales, con la funcion intercambiar les cambio los valores mediante punteros, muestro en pantalla ambos valores, los de antes del cambio y los de despues , usando los punteros punt1 y punt2
 
 
 
