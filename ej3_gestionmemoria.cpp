@@ -21,8 +21,18 @@ using namespace std;
 }
 
 int main() {
+     //declaro dos variables enteras num1 y num2 con valores iniciales
      int num1=928;
         int num2=922;
         cout<<"los valores originales son: "<<num1<<" y "<<num2<<endl;
+        //declaro puntero 1 y puntero 2 que apuntan a num1 y num2 respectivamente
+
+int *punt1=&num1;
+int *punt2=&num2;
+
+//llamo a la funcion intercambiar pasando los punteros como argumentos
+    // La función intercambiar modificará los valores a los que apuntan estos punteros.
+    intercambiar(punt1, punt2);
+
 
  }
