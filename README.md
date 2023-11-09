@@ -81,6 +81,8 @@ En resumen, la gestión de recursos y la gestión de excepciones están relacion
 
 ## cada ejercicio requerido esta numerado en su correspondiente archivo
 
+## utilizcion de fuentes como chat gpt y github copilot
+
 
 
 
