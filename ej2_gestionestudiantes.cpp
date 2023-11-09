@@ -13,3 +13,10 @@ public:
         edad = 0;
         grado = "";
     }
+// Función para establecer los datos del estudiante
+
+    void establecer_datos(std::string nombre, int edad, std::string grado) {
+        this->nombre = nombre;
+        this->edad = edad;
+        this->grado = grado;
+    }
