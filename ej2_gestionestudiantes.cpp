@@ -33,3 +33,5 @@ int main() {
     string nombre;
     int edad;
     string grado;
+//solicitar al user que introduzca su edad grado y nombre
+cout<<"introdzca su nombre:";<<endl;
